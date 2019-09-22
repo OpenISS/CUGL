@@ -17,3 +17,8 @@ The library is more up to date than the examples. Some of them may require minor
 * [Miao Song](https://dblp.uni-trier.de/pers/hd/s/Song_0001:Miao), Serguei A. Mokhov, and Peter Grogono. 2009. Designing an interactive OpenGL slide-based presentation of the softbody simulation system for teaching and learning of computer graphics techniques. In Proceedings of the 2nd Canadian Conference on Computer Science and Software Engineering (C3S2E '09), Bipin C. Desai and Carson K. Leung (Eds.). ACM, New York, NY, USA, 131-136. DOI=http://dx.doi.org/10.1145/1557626.1557647
 * Song, Miao. "Dynamic deformation of uniform elastic two-layer objects.", Master's thesis, arXiv preprint [arXiv:0907.4364](https://arxiv.org/abs/0907.4364) (2009).
 * ...
+
+## Submitting Issues, Bug Reports, and Pull Requests:
+
+* [Issue Tracker](https://github.com/OpenISS/CUGL/issues)
+* [Pull Requests](https://github.com/OpenISS/CUGL/pulls)
