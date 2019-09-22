@@ -16,6 +16,7 @@ set_target_properties(
 		ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
 		LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
     	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+    	PUBLIC_HEADER "${CMAKE_SOURCE_DIR}/include/cugl.h"
 		)
 
 # Graphics APIs
@@ -29,5 +30,10 @@ endif()
 if(OPENGL_FOUND)
 	target_link_libraries(oicugl ${OPENGL_LIBRARIES})
 endif()
+
+#
+install(TARGETS oicugl
+        LIBRARY DESTINATION lib
+        PUBLIC_HEADER DESTINATION include/cugl)
 
 # EOF

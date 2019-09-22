@@ -9,9 +9,11 @@ else()
 endif()
 
 #
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake-modules)
+set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/bin)
 
 #
 add_subdirectory(src/)
+add_subdirectory(samples/)
 
 # EOF
