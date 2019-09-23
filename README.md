@@ -6,6 +6,8 @@ Concordia University Graphics Library
 * GitHub pages [documentation](https://openiss.github.io/CUGL/)
 * Current maintainers: Serguei Mokhov and Jashanjot Singh for the OpenISS team
 
+## Repo structure
+
 ### include
 CUGL header files
 
