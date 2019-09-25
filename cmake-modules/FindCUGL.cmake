@@ -5,13 +5,13 @@
 find_path(
 	CUGL_INCLUDE_DIR
 	NAMES "cugl/cugl.h"
-	PATHS "/usr/local/include"
+	PATHS "$ENV{CUGL_INCLUDE}"
 	)
 
 find_library(
 	CUGL_LIBRARY
-	NAMES "cugl"
-	PATHS "/usr/local/lib"
+	NAMES "oicugl"
+	PATHS "$ENV{CUGL_REDIST}"
 	)
 
 set(CUGL_INCLUDE_DIR ${CUGL_INCLUDE_DIR})

@@ -7,6 +7,8 @@
 2. [Link Directories] **CUGL_LIBRARY** 
 3. [Boolean] **CUGL_INCLUDE_DIR_FOUND** 
 4. [Boolean] **CUGL_LIBRARY_FOUND**
+5. [Environment Variable Include] **CUGL_INCLUDE**
+6. [Environment Variable Library] **CUGL_REDIST**
 
 
 > **Note:** This **FindCUGL.cmake** enables CMake to automate the usage of CUGL
