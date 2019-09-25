@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.5)
 project(oicugl VERSION 0.1.0)
 
 #
@@ -16,6 +16,6 @@ set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/bin)
 
 #
 add_subdirectory(src/)
-add_subdirectory(samples/)
+#add_subdirectory(samples/)
 
 # EOF
