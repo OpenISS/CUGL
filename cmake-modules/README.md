@@ -21,8 +21,8 @@
 5. `cmake .. -L`
 6. `make`
 7. `make install`
-8. `setenv CUGL_INCLUDE PATH` where PATH is the absolute path to `user/cugl/build/bin/include`
-9. `setenv CUGL_REDIST PATH` where PATH is the absolute path to `user/cugl/build/bin/lib`
+8. `setenv CUGL_INCLUDE PATH` where PATH is the absolute path to `$HOME/CUGL/build/bin/include`
+9. `setenv CUGL_REDIST PATH` where PATH is the absolute path to `$HOME/CUGL/build/bin/lib`
 10. Uncomment `add_subdirectory(samples)` in the root `CMakeLists.txt`
 11. `make`
 12. `.build/samples/example_executable`
