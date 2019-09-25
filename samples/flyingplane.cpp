@@ -65,6 +65,7 @@ const Quaternion rollInv = roll.inv();
 
 GLuint plane;                 // Index for model.
 
+// StackOverflow
 double GetTickCount(void) 
 {
   struct timespec now;
