@@ -32,12 +32,9 @@ if(OPENGL_FOUND)
 endif()
 
 #
-install 
-	(
-	TARGETS oicugl
+install(TARGETS oicugl
 	ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib
-    PUBLIC_HEADER DESTINATION include/cugl
-    )
+        LIBRARY DESTINATION lib
+        PUBLIC_HEADER DESTINATION include/cugl)
 
 # EOF
