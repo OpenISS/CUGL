@@ -22,7 +22,7 @@ if(OPENGL_FOUND)
 endif()
 
 if(CUGL_LIBRARY_FOUND)
-	target_include_directories(sample ${CUGL_INCLUDE_DIR})
+	target_include_directories(sample PUBLIC ${CUGL_INCLUDE_DIR})
 	target_link_libraries(sample ${CUGL_LIBRARY})
 endif()
 
