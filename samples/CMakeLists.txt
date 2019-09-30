@@ -1,6 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
-project(oicugl VERSION 0.1.0)
-
+#
 add_executable(sample sample.cpp)
 
 target_include_directories( sample

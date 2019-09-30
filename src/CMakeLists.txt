@@ -1,6 +1,3 @@
-cmake_minimum_required(VERSION 3.5)
-project(oicugl VERSION 0.1.0)
-
 #
 AUX_SOURCE_DIRECTORY(. SOURCEFILES)
 add_library(oicugl ${SOURCEFILES})
@@ -32,8 +29,7 @@ if(OPENGL_FOUND)
 endif()
 
 #
-install 
-	(
+install(
 	TARGETS oicugl
 	ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
