@@ -1,6 +1,6 @@
 #
 AUX_SOURCE_DIRECTORY(. SOURCEFILES)
-add_library(oicugl ${SOURCEFILES})
+add_library(oicugl SHARED ${SOURCEFILES})
 
 target_include_directories( oicugl
 		PUBLIC
@@ -12,8 +12,8 @@ set_target_properties(
 		PROPERTIES
 		ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
 		LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib"
-    	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
-    	PUBLIC_HEADER "${CMAKE_SOURCE_DIR}/include/cugl.h"
+	    	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+    		PUBLIC_HEADER "${CMAKE_SOURCE_DIR}/include/cugl.h"
 		)
 
 # Graphics APIs
@@ -32,8 +32,8 @@ endif()
 install(
 	TARGETS oicugl
 	ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib
-    PUBLIC_HEADER DESTINATION include/cugl
-    )
+    	LIBRARY DESTINATION lib
+    	PUBLIC_HEADER DESTINATION include/cugl
+    	)
 
 # EOF
