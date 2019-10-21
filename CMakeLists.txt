@@ -16,6 +16,6 @@ set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/bin)
 
 #
 add_subdirectory(src/)
-add_subdirectory(samples/)
-
+# Uncommment after a successful `make install`
+#add_subdirectory(samples/)
 # EOF
