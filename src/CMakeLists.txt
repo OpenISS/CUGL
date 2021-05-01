@@ -17,16 +17,11 @@ set_target_properties(
 		)
 
 # Graphics APIs
-find_package(GLUT REQUIRED)
+find_package(glew REQUIRED)
+find_package(glm CONFIG REQUIRED)
 find_package(OpenGL REQUIRED)
 
-if(GLUT_FOUND)
-	target_link_libraries(oicugl ${GLUT_LIBRARIES})
-endif()
-
-if(OPENGL_FOUND)
-	target_link_libraries(oicugl ${OPENGL_LIBRARIES})
-endif()
+target_link_libraries(oicugl PRIVATE GLEW::GLEW glm)
 
 #
 install(

@@ -1,8 +1,10 @@
 # Build dirs
 build/
+.vs
 
 # Prerequisites
 *.d
+CMakeSettings.json
 
 # Compiled Object files
 *.slo
