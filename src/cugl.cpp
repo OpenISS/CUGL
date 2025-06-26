@@ -1035,10 +1035,10 @@ void Quaternion::apply() const
 
 void Quaternion::euler(double & xr, double & yr, double & zr) const
 {
-   double sqs = s * s;
-   double sqx = v.x * v.x;
-   double sqy = v.y * v.y;
-   double sqz = v.z * v.z;
+   double sqs = static_cast<double>(s) * s;
+   double sqx = static_cast<double>(v.x) * v.x;
+   double sqy = static_cast<double>(v.y) * v.y;
+   double sqz = static_cast<double>(v.z) * v.z;
 
    xr = yr = zr = 0;
    xr = atan2(static_cast<double>(2 * (v.y * v.z + v.x * s)), - sqx - sqy + sqz + sqs);
